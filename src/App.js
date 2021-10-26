@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import Greeting from './components/Greeting';
 import './App.css';
 
 function App() {
+  const user = {
+    firstName: 'Turma',
+    lastName: '02'
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Greeting user={user}/>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, optio. Facere iste tempora, expedita rerum qui fugit atque doloremque, sunt aut dolores quas numquam quod officiis, eveniet odit minus placeat.</p>
     </div>
   );
 }
