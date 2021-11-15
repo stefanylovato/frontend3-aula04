@@ -1,4 +1,5 @@
 import Greeting from './components/Greeting';
+import Paragraph from './components/Paragraph';
 import './App.css';
 
 function App() {
@@ -7,11 +8,18 @@ function App() {
     lastName: '02'
   }
 
+  const funcao = () => {
+    console.log ('uepaaaaaaaaaaa');
+  }
+
   return (
-    <div className="App">
-      <Greeting user={user}/>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, optio. Facere iste tempora, expedita rerum qui fugit atque doloremque, sunt aut dolores quas numquam quod officiis, eveniet odit minus placeat.</p>
-    </div>
+    <>
+      <div className="App">
+      <Greeting user={user} />
+      <Paragraph usuario={user}>Lorem ipsum jsijdsljdlksasaudghisoadsalkndsa gdfgfd fniohdiosah {user.firstName} dhiosahdiosad </Paragraph>
+      <Paragraph funcao={funcao} />
+      </div>
+    </>
   );
 }
 

@@ -1,15 +1,14 @@
 function Greeting({user}){
     const greeting = () => {
-      if(user.lastName === '02'){
-        return  `${user.firstName} ${user.lastName}`;
+        if (user.lastName == '02'){
+          return `${user.firstName} ${user.lastName}`;
+        }
+        return 'turma desconhecida' 
       }
-      return  'Turma desconhecida';
-    }
-  
+
     return(
-      <h1>Olá, {greeting()}</h1>
+        <h1>Olá, {greeting()}</h1>
     )
-  }
-  
-  export default Greeting;
-  
+}
+
+export default Greeting;
